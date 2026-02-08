@@ -8,7 +8,7 @@ import {
   ReactQuery,
   TailwindCSS,
 } from 'developer-icons';
-import { CloudMoon, Github, ExternalLink, Eye } from 'lucide-react';
+import { CloudMoon, Github, Eye } from 'lucide-react';
 import { motion } from 'motion/react';
 import Image from 'next/image';
 import Link from 'next/link';

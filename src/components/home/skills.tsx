@@ -17,7 +17,6 @@ import {
   Trae,
   Vercel,
   VPS,
-  Vps,
   Zustand,
 } from '@/icon/icons';
 import {
