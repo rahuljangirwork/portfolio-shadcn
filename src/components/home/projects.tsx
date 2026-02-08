@@ -8,7 +8,7 @@ import {
   ReactQuery,
   TailwindCSS,
 } from 'developer-icons';
-import { CloudMoon, Github, ExternalLink } from 'lucide-react';
+import { CloudMoon, Github, ExternalLink, Eye } from 'lucide-react';
 import { motion } from 'motion/react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -53,40 +53,8 @@ const projects: Project[] = [
     github: 'https://github.com/talhaabu1/Movie-Mark',
     stack: [
       { title: 'Next.js', icon: <NextJs className="size-3.5" /> },
-      { title: 'React Query', icon: <ReactQuery className="size-3.5" /> },
-      { title: 'Auth.js', icon: <AuthJs className="size-3.5" /> },
-      {
-        title: 'Drizzle',
-        icon: <Drizzle className="size-3.5 text-[#C5F74F]" />,
-      },
-    ],
-  },
-  {
-    name: 'Tempify',
-    description:
-      'Smart weather dashboard featuring 5-day forecasts, location history, and personalized favorite cities.',
-    image: '/tempify-app.png',
-    live: 'https://tempifyapp.talhacodes.dev/',
-    github: 'https://github.com/TalhaCodes/tempify',
-    stack: [
-      { title: 'React', icon: <ReactIcon className="size-3.5" /> },
       { title: 'Tailwind', icon: <TailwindCSS className="size-3.5" /> },
       { title: 'Shadcn', icon: <ShadcnUI className="size-3.5" /> },
-      {
-        title: 'Weather API',
-        icon: <CloudMoon className="size-3.5 text-orange-400" />,
-      },
-    ],
-  },
-  {
-    name: 'Movie Mark',
-    description:
-      'Cinematic discovery platform with watchlist curation, advanced search, and secure user authentication.',
-    image: '/movie-mark.png',
-    live: 'https://moviemark.talhacodes.dev/movie',
-    github: 'https://github.com/talhaabu1/Movie-Mark',
-    stack: [
-      { title: 'Next.js', icon: <NextJs className="size-3.5" /> },
       { title: 'React Query', icon: <ReactQuery className="size-3.5" /> },
       { title: 'Auth.js', icon: <AuthJs className="size-3.5" /> },
       {
@@ -117,7 +85,7 @@ export const Projects = () => {
               whileHover={{ y: -5, transition: { duration: 0.2 } }}
               transition={{ delay: index * 0.1, duration: 0.5 }}
               viewport={{ once: true }}
-              className="group relative flex flex-col rounded-3xl border border-white/5 bg-zinc-900 overflow-hidden hover:border-primary/20 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/5">
+              className="group relative flex flex-col rounded-3xl border border-white/10 bg-zinc-900 overflow-hidden hover:border-primary/50 hover:ring-1 hover:ring-primary/50 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/10">
               {/* Image Container */}
               <div className="relative h-64 w-full overflow-hidden">
                 <Image
@@ -142,7 +110,7 @@ export const Projects = () => {
                     <Button
                       size="icon"
                       className="rounded-full size-8 bg-primary text-primary-foreground shadow-lg shadow-primary/20 hover:bg-primary/90">
-                      <ExternalLink className="size-4" />
+                      <Eye className="size-4" />
                     </Button>
                   </Link>
                 </div>

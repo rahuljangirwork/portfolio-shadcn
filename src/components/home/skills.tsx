@@ -4,6 +4,7 @@ import { Magnetic } from '@/components/animate-ui/effects/magnetic';
 import { SkillCard, type SkillLevel } from '@/components/skill-card';
 import {
   AuthJs,
+  Dokploy,
   Drizzle,
   ExpressJs,
   GitHub,
@@ -15,6 +16,8 @@ import {
   SocketIo,
   Trae,
   Vercel,
+  VPS,
+  Vps,
   Zustand,
 } from '@/icon/icons';
 import {
@@ -224,11 +227,24 @@ const tools: Skill[] = [
     link: 'https://vercel.com/',
     level: 'proficient',
   },
+
   {
     name: 'Netlify',
     icon: <Netlify className="size-10" />,
     link: 'https://www.netlify.com/',
     level: 'proficient',
+  },
+  {
+    name: 'VPS',
+    icon: <VPS className="size-10" />,
+    link: 'https://www.google.com/search?q=vps&oq=vps&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg7MgYIAhBFGDsyBggDEEUYQTIGCAQQRRg8MgYIBRBFGDwyBggGEEUYPDIGCAcQRRg80gEIMTQzMWowajeoAgCwAgA&sourceid=chrome&ie=UTF-8',
+    level: 'advanced',
+  },
+  {
+    name: 'Dokploy',
+    icon: <Dokploy className="size-10" />,
+    link: 'https://www.dokploy.com/',
+    level: 'expert',
   },
   {
     name: 'PNPM',

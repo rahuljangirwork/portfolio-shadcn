@@ -67,12 +67,38 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
+  alternates: {
+    canonical: 'https://talhacodes.dev',
+  },
+};
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Abdullah Al Mahmud Talha',
+  url: 'https://talhacodes.dev',
+  image: 'https://talhacodes.dev/talha.jpg',
+  sameAs: [
+    'https://github.com/talhacodesdev',
+    'https://www.linkedin.com/in/talhacodesdev/',
+    'https://x.com/talhacodesdev',
+    'https://www.facebook.com/talhacodesdev',
+  ],
+  jobTitle: 'Full Stack Developer',
+  worksFor: {
+    '@type': 'Organization',
+    name: 'Self-Employed',
+  },
 };
 
 const RootLayout = ({ children }: { children: ReactNode }) => {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={GeistMono.className}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <div className="relative">
           {/* Masked background overlay */}
           <div
